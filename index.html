@@ -2,64 +2,120 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma Première Page Web</title>
+    <title>Tout sur les Chats</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fffaf5;
+            color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 15px 20px;
+            background-color: #ffb6b6;
+            padding: 20px;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #ffe0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
         main {
-            background-color: white;
             padding: 20px;
-            margin-top: 10px;
-            border-radius: 5px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #cc4c4c;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            color: #777;
-            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffb6b6;
+            margin-top: 30px;
         }
     </style>
-    <!-- Matomo Tag Manager -->
-<script>
-  var _mtm = window._mtm = window._mtm || [];
-  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-  (function() {
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/eva-mar.matomo.cloud/container_7tikjmn6.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Tag Manager -->
 </head>
 <body>
 
 <header>
-    <h1>Bienvenue sur ma page web</h1>
+    <h1>Tout savoir sur les Chats</h1>
+    <p>Guide complet pour les amoureux des félins</p>
 </header>
 
-<main>
-    <h2>Présentation</h2>
-    <p>Voici un exemple simple de page web réalisée en HTML et un peu de CSS.</p>
+<nav>
+    <a href="#races">Races</a>
+    <a href="#pelage">Pelage</a>
+    <a href="#couleurs">Couleurs</a>
+    <a href="#soins">Soins</a>
+    <a href="#attention">À surveiller</a>
+</nav>
 
-    <h3>Ce que vous pouvez faire :</h3>
-    <ul>
-        <li>Modifier le contenu</li>
-        <li>Ajouter des images</li>
-        <li>Styliser avec CSS</li>
-    </ul>
+<main>
+    <section id="races">
+        <h2>Races de Chats</h2>
+        <p>Il existe de nombreuses races de chats, chacune avec ses particularités :</p>
+        <ul>
+            <li><strong>Maine Coon :</strong> Grand, affectueux et sociable.</li>
+            <li><strong>Siamois :</strong> Très vocal, élégant et loyal.</li>
+            <li><strong>British Shorthair :</strong> Calme, rond et doux.</li>
+            <li><strong>Persan :</strong> Pelage long, très calme et câlin.</li>
+        </ul>
+    </section>
+
+    <section id="pelage">
+        <h2>Types de Pelage</h2>
+        <p>Le pelage peut être court, mi-long ou long. Il peut aussi être bouclé (ex : Devon Rex) ou sans poils (ex : Sphynx).</p>
+    </section>
+
+    <section id="couleurs">
+        <h2>Couleurs de Robe</h2>
+        <p>Les chats peuvent avoir une grande variété de couleurs :</p>
+        <ul>
+            <li>Tabby (tigré)</li>
+            <li>Uni (noir, blanc, gris...)</li>
+            <li>Bicolore, tricolore (écaille de tortue)</li>
+            <li>Point (comme les siamois : extrémités plus foncées)</li>
+        </ul>
+    </section>
+
+    <section id="soins">
+        <h2>Comment s'occuper d'un Chat</h2>
+        <ul>
+            <li>Nourriture adaptée à l'âge et à la race</li>
+            <li>Brossage régulier selon le type de pelage</li>
+            <li>Jouets et stimulation mentale</li>
+            <li>Visites vétérinaires régulières</li>
+            <li>Litière propre et accessible</li>
+        </ul>
+    </section>
+
+    <section id="attention">
+        <h2>Points à Surveiller</h2>
+        <ul>
+            <li>Signes de maladie : perte d'appétit, léthargie, vomissements...</li>
+            <li>Surpoids ou maigreur</li>
+            <li>Comportement inhabituel ou agressif</li>
+            <li>Parasites : puces, tiques, vers</li>
+        </ul>
+    </section>
 </main>
 
 <footer>
-    &copy; 2025 - Mon Site Web
+    &copy; 2025 - Site dédié aux chats - Tous droits réservés
 </footer>
 
 </body>
